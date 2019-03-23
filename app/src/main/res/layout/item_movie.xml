@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvMovies"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:focusable="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivMovieImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat = "@mipmap/ic_launcher"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/activity_small_margin"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:maxLength="30"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/ivMovieImage"
+            android:layout_toEndOf="@id/ivMovieImage"
+            tools:text="Captain Marvel"
+            android:layout_marginStart="@dimen/activity_small_margin" />
+
+        <TextView
+            android:id="@+id/tvMovieContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMovieTitle"
+            android:layout_marginLeft="@dimen/activity_small_margin"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:layout_toEndOf="@id/ivMovieImage"
+            android:maxLength="250"
+            tools:text="Captain Marvel Overview"
+
+            android:layout_toRightOf="@id/ivMovieImage"
+            android:layout_marginStart="@dimen/activity_small_margin" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
